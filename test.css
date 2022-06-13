@@ -118,10 +118,6 @@
 .modal-icon {
   width: 18px;
   height: 18px;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .mod-button:hover,
 .mod-button:focus {
