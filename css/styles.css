@@ -21,6 +21,8 @@ html {
   --border-head-color: #ececec;
   --icons-border-color: #afb1b8;
   --thumb-color: rgba(47, 48, 58, 0.8);
+  --black: #000000;
+  --border-second-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -122,9 +124,9 @@ header {
   height: 30px;
   padding: 0;
   margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-second-color);
   background-color: var(--primary-background-color);
-  color: #000000;
+  color: var(--black);
 }
 
 /* Стилизация Лого */
@@ -151,8 +153,23 @@ header {
 .header-menu .flex-menu:not(:last-child) {
   margin-right: 50px;
 }
+.flex-menu {
+  position: relative;
+}
+
 .header-menu {
   margin-left: 93px;
+}
+
+.link-current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-text-color);
 }
 
 .header-menu .link {
