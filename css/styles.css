@@ -23,6 +23,7 @@ html {
   --thumb-color: rgba(47, 48, 58, 0.8);
   --black: #000000;
   --border-second-color: rgba(0, 0, 0, 0.1);
+  --pot-card-bg: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -549,6 +550,28 @@ header {
 }
 
 /* Стилизация страницы Портфолио */
+.port-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text {
+  position: absolute;
+  margin: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--primary-background-color);
+  background-color: var(--pot-card-bg);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-hover:hover .card-text {
+  transform: translateY(0);
+}
 .project-title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -588,7 +611,9 @@ header {
   display: block;
   text-decoration: none;
 }
-
+.link-hover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-hover:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
