@@ -86,7 +86,7 @@
   padding: 10px 32px;
 } */
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -138,4 +138,4 @@
   margin: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-background-color);
-}
+} */
