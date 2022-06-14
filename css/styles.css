@@ -77,6 +77,7 @@ header {
 
 /* Модальное Окно */
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -274,8 +275,7 @@ header {
   cursor: pointer;
   min-width: 200px;
   padding: 10px 32px;
-
-  /* margin-bottom: 200px; */
+  margin: 0;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -567,7 +567,7 @@ header {
   color: var(--primary-background-color);
   background-color: var(--pot-card-bg);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .link-hover:hover .card-text {
   transform: translateY(0);
@@ -612,7 +612,7 @@ header {
   text-decoration: none;
 }
 .link-hover {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-hover:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
